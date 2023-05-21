@@ -34,10 +34,13 @@ In the system design, the program undergoes the following steps.
 - Principal amount(will be of type double)  
 - Percentage interest rate(will be of type double)
 - Duration you expect to pay(will be of type int)     
+
 2.Using the data obtained from the user input, compute the monthly payment amount using interest only loan payment model; 
 **monthly payment = principal * (interestRate/12)** (return type double)    
+
 3.Using the monthly payment amount, compute the total amount to be payed by;   
 **total amount = monthly payment * duration(p.a)** (type double)      
+
 4.Output the monthly payment and the total payment after specified duration     
 
 ###### Steps for armotised loans.
@@ -45,12 +48,15 @@ In the system design, the program undergoes the following steps.
 - Principal amount(will be of type double)
 - Periodic interest rate(will be of type double)
 - Loan term period(will be of type int)
-- Time expected to pay the loan(will be of type int)
+- Time expected to pay the loan(will be of type int)    
+
 2.Consequently the data obtained from the user input, can be used to calculate armotized loan with previous models;    
 **monthly payment = principal / pow(1+rate, laonTermPeriod)-1 / rate * pow(1+rate, loanTermPeriod)**(return type double)     
 *where* **rate = periodicInterestRate / 12**    
+
 3.Using the monthly payment amount, compute total payment by;    
 **total amount = monthly payment * duration(p.m)**     
+
 4.Output the monthly payment and the total payment after specified duration     
 
 
