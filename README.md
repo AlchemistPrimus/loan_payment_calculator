@@ -20,7 +20,7 @@ This program will then compute and display the monthly payments and the total pa
 Output of the monthly payments and total payments were obtained using the following mathematical models:  
 For interest only loans;   
 ###### Monthly payment = principal * (interestRate/12)   
-For armotised loans;   
+For armotized loans;   
 ###### Monthly payment = principal / pow(1+rate, loanTermPeriod)-1 / rate * pow(1+rate, loanTermPeriod)   
 Where; *rate = PeriodicInterestRate / 12*   
 
@@ -43,7 +43,7 @@ In the system design, the program undergoes the following steps.
 
 4.Output the monthly payment and the total payment after specified duration     
 
-###### Steps for armotised loans.
+###### Steps for armotized loans.
 1.Prompt user to enter inputs;  
 - Principal amount(will be of type double)
 - Periodic interest rate(will be of type double)
