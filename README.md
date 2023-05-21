@@ -55,7 +55,7 @@ In the system design, the program undergoes the following steps.
 *where* **rate = periodicInterestRate / 12**    
 
 3.Using the monthly payment amount, compute total payment by;    
-**total amount = monthly payment * duration(p.m)**     
+**total amount = monthly payment * duration(p.m)**(return type double)     
 
 4.Output the monthly payment and the total payment after specified duration     
 
@@ -64,22 +64,29 @@ In the system design, the program undergoes the following steps.
 
 This program is originally design to run on linux/unix environment and can be set up and run using the steps below.   
 
-Clone the source code from github [repository](https://github.com/AlchemistPrimus/loan_payment_calculator.git) in your desired directory;    
+> In your terminal, follow the following steps    
 
-`$git clones https://github.com/AlchemistPrimus/loan_payment_calculator.git`    
+>> Clone the source code from github [repository](https://github.com/AlchemistPrimus/loan_payment_calculator.git) in your desired directory;    
 
-Navigate to the location of the source code;   
+>> `$git clone https://github.com/AlchemistPrimus/loan_payment_calculator.git`    
 
-`$cd loan_payment_calculator`   
+>> Navigate to the location of the source code;   
 
-Running the executable file;  
+>> `$cd loan_payment_calculator`   
 
-`$./loan_pay_cal`   
+>> Running the executable file;  
+
+>>`$./loan_pay_cal`   
 
 ###### Alternatively you can prepare the c++ source code as follows(g++ is required)    
-Compiling the source code   
-`$g++ -Wall -Werror -Wextra -c loan_pay_cal.cpp -o loan_pay_cal.o`   
-Linking the object files    
-`$g++ loan_pay_cal.o -o loan_pay_cal`    
-Running the executable;    
-`$./loan_pay_cal`   
+> Compiling the source code   
+>> `$g++ -Wall -Werror -Wextra -c loan_pay_cal.cpp -o loan_pay_cal.o`   
+
+>> Linking the object files    
+
+>> `$g++ loan_pay_cal.o -o loan_pay_cal`    
+
+>> Running the executable;    
+
+>> `$./loan_pay_cal`   
+
